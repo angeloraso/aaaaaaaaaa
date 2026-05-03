@@ -1,0 +1,47 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never",
+    "source.organizeImports": "explicit"
+  },
+  "js/ts.updateImportsOnFileMove.enabled": "never",
+  "js/ts.validate.enabled": true,
+  "eslint.validate": ["javascript", "typescript", "html"],
+  "eslint.run": "onSave",
+  "cSpell.userWords": ["anura", "userpanel", "ecommerce"],
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "[css][javascript][json][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
+}

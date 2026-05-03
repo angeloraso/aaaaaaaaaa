@@ -1,0 +1,9 @@
+*.html
+dist
+www
+node_modules
+package.lock.json
+.vscode
+.angular
+**/index.ts
+coverage/
