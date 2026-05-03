@@ -1,0 +1,13 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>{{name}}</mat-card-title>
+    <mat-card-subtitle>Edad: {{age}}</mat-card-subtitle>
+
+    <button matButton (click)="remove()">Eliminar</button>
+    
+  </mat-card-header>
+  <h6>DNI: {{dni}}</h6>
+  <mat-card-actions>
+    <button matButton>Modificar</button>
+  </mat-card-actions>
+</mat-card>

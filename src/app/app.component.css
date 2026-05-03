@@ -1,0 +1,28 @@
+
+.app {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.app__header {
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.app__grid {
+  background-color: transparent;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.app__date {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
