@@ -1,35 +1,28 @@
-<div class="app" style="background-color: #d5e4f5">
+<div class="app">
 
   <router-outlet></router-outlet>
-  
+
   <div class="app__header">
     <input style="height: 3rem; width: 16rem;" [(ngModel)]="ageFiler" />
   </div>
-  
+
   <span class="app__date">
     <h5>Fecha</h5>
     <h4>{{date | date : 'dd-MM-yyyy hh:mm' }}</h4>
   </span>
-    
+
   @if (loading) {
-    <span style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-      <mat-spinner></mat-spinner>
-    </span>
+  <span style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+    <mat-spinner></mat-spinner>
+  </span>
   } @else {
-    <div class="app__grid">
-    
-      @for (user of users | agePipe : ageFiler; track $index) {
-        <app-card 
-          [name]="user.name.first + user.name.last"
-          [age]="user.dob.age"
-          (removeCard)="removeUser(user)">
-        </app-card>
-      }
-    
-    </div>
+  <div class="app__grid">
+
+    @for (user of users | agePipe : ageFiler; track $index) {
+    <app-card [name]="user.name.first + user.name.last" [age]="user.dob.age" (removeCard)="removeUser(user)">
+    </app-card>
+    }
+
+  </div>
   }
 </div>
-
-
-
-

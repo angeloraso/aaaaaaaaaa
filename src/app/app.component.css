@@ -1,9 +1,13 @@
+:host {
+  --background-color: #00f345;
+}
 
 .app {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  background-color: var(--background-color);
 }
 
 .app__header {
